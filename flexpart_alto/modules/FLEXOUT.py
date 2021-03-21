@@ -103,6 +103,12 @@ class FLEXOUT:
             self.head_ds,
         )
 
+        #todo you might need to not load this
+        log.ger.debug('loading file. this is mem consuming')
+        self.flexout_ds.load()
+        log.ger.debug('loading file done')
+
+
         self.flexout_hour_ds_list = self.get_flx_hour_ds_list()
         # noinspection PyTypeChecker
         return xr.concat(self.flexout_hour_ds_list, dim=co.RL)
