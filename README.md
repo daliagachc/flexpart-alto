@@ -60,3 +60,12 @@ scratch notebooks used only for quick prototyping go here
   - [x] check why is happening
     - the error is in line 658 from flx_array.py
     - I was doing lat instead of lon conversion
+  - managed to have a functioning script for
+  --z030_get_flx_log_pol_coords_puhti.py--
+  for converting from rect to logpolar
+  - [ ] next I will write a script to have it run in pareallel in the super computer:
+    - [ ] write the script with name: 
+    - [ ] create a list to be executed at puhti 
+    - this time we will try to use the slurm array functionality
+    - [ ] delete al test logpol files from puhti 
+   
