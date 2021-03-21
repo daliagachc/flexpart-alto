@@ -1,0 +1,8 @@
+**/.virtual_documents/
+.ipynb_checkpoints
+__pycache__
+*.swp
+.DS_Store
+#/flexpart_management/sym_links
+.idea
+/flexpart_alto/data*/*
