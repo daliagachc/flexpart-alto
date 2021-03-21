@@ -12,5 +12,5 @@
 # run the analysis command
 
 conda activate b3
-script=
-python ${SLURM_ARRAY_TASK_ID}
+script=/users/aliagadi/flexpart-alto/flexpart_alto/nbs/nb_run_2021-03-14_20-15-10_LONG/z035_get_flx_log_pol_coords_puhti_array.py
+python ${script} ${SLURM_ARRAY_TASK_ID}
