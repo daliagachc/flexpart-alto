@@ -104,9 +104,9 @@ class FLEXOUT:
         )
 
         #todo you might need to not load this
-        log.ger.debug('loading file. this is mem consuming')
-        self.flexout_ds.load()
-        log.ger.debug('loading file done')
+        # log.ger.debug('loading file. this is mem consuming')
+        # self.flexout_ds.load()
+        # log.ger.debug('loading file done')
 
 
         self.flexout_hour_ds_list = self.get_flx_hour_ds_list()
@@ -179,7 +179,10 @@ class FLEXOUT:
         keep_coords = coords_to_keep
 
         sum_ds = self.flexout_hour_ds
-        sum_ds = sum_ds[keep_vars].sel(**{co.RL: release})
+        #todo check this as it may too memory hungry
+        log.ger.debug('loading flx day data')
+        sum_ds = sum_ds[keep_vars].sel(**{co.RL: release}).load()
+        log.ger.debug('done loading flx day data')
         complement_coords = fa.get_dims_complement(sum_ds, keep_coords)
         log.ger.debug('completemt coords: %s', complement_coords)
         sum_ds = sum_ds.sum(dim=complement_coords)
