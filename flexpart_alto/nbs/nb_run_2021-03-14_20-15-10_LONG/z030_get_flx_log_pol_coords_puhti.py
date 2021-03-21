@@ -50,7 +50,7 @@ run_name= run_name,
 )
 
 # %%
-for p in paths[:1]:
+for p in paths[:]:
     for d in doms:
         print('starting',d,p)
         new_dic = dict(dom=d,folder_path=p)
