@@ -63,9 +63,11 @@ scratch notebooks used only for quick prototyping go here
   - managed to have a functioning script for
   --z030_get_flx_log_pol_coords_puhti.py--
   for converting from rect to logpolar
-  - [ ] next I will write a script to have it run in pareallel in the super computer:
-    - [ ] write the script with name: 
-    - [ ] create a list to be executed at puhti 
+  - [x] next I will write a script to have it run in pareallel in the super computer:
+    - [x] write the script with name: 
+    - [x] create a list to be executed at puhti 
     - this time we will try to use the slurm array functionality
-    - [ ] delete al test logpol files from puhti 
-   
+    - [x] delete al test logpol files from puhti 
+- 2021-03-22_09-36-42_
+  - finish the run
+    - d01 runned ok. but d02 run out of memory for some files

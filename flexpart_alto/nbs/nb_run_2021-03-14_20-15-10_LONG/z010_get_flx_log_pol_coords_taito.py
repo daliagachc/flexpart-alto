@@ -13,7 +13,10 @@
 # ---
 
 # %%
+"""
+this is a test script used locally to test if de logpolar conversion
 
+"""
 # %%
 # this notebook was created to convert rectanfular coo
 
@@ -30,7 +33,10 @@ log.ger.setLevel(log.log.DEBUG)
 
 # %%
 # os.environ['HDF5_USE_FILE_LOCKING'] = 'FALSE'
-doms = ['d01', 'd02']
+doms = [
+    'd01',
+    # 'd02',
+]
 root_path = '/Volumes/Transcend/diego_tr/flexpart-alto/flexpart_alto/data_small/d_run_2021-03-14_20-15-10_LONG/*-*-*'
 # root_path = '/homeappl/home/aliagadi/wrk/DONOTREMOVE/flexpart_management_data/runs/run_2019-06-05_18-42-11_/*-*-*'
 path_out = '/Volumes/Transcend/diego_tr/flexpart-alto/flexpart_alto/data_small/d_run_2021-03-14_20-15-10_LONG/log_pol'
